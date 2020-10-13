@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
@@ -17,52 +17,52 @@
 
       <ul class="user-navigation">
         <li>
-          <a class="user-navigation-search" href="">Поиск по сайту</a>
+          <a class="user-navigation-item user-navigation-search" href="">Поиск по сайту</a>
         </li>
         <li>
-          <a class="user-navigation-name" href="">Валентин Петухов</a>
-          <a class="user-navigation-logout" href="">Выйти</a>
+          <a class="user-navigation-item user-navigation-name" href="">Валентин Петухов</a>
+          <a class="user-navigation-item user-navigation-logout" href="">Выйти</a>
         </li>
         <li>
-          <a class="user-navigation-compare" href="">Сравнить</a>
+          <a class="user-navigation-item user-navigation-compare" href="">Сравнить</a>
         </li>
         <li>
-          <a class="user-navigation-cart" href="">Корзина</a>
+          <a class="user-navigation-item user-navigation-cart" href="">Корзина</a>
         </li>
       </ul>
 
       <ul class="site-navigation">
         <li>
-          <a class="site-navigation-catalog" href="">Каталог товаров</a>
+          <a class="site-navigation-link site-navigation-catalog" href="">Каталог товаров</a>
           <ul class="site-sub-navigation">
             <li>
-              <a class="site-sub-navigation-vr" href="">Виртуальная реальность</a>
+              <a class="site-sub-navigation-link site-sub-navigation-vr" href="">Виртуальная реальность</a>
             </li>
             <li>
-              <a class="site-sub-navigation-monopods">Моноподы для селфи</a>
+              <a class="site-sub-navigation-link site-sub-navigation-monopods">Моноподы для селфи</a>
             </li>
             <li>
-              <a class="site-sub-navigation-action-cameras" href="">Экшн-камеры</a>
+              <a class="site-sub-navigation-link site-sub-navigation-action-cameras" href="">Экшн-камеры</a>
             </li>
             <li>
-              <a class="site-sub-navigation-fitness-bracelets" href="">Фитнес-браслеты</a>
+              <a class="site-sub-navigation-link site-sub-navigation-fitness-bracelets" href="">Фитнес-браслеты</a>
             </li>
             <li>
-              <a class="site-sub-navigation-smart-watch" href="">Умные часы</a>
+              <a class="site-sub-navigation-link site-sub-navigation-smart-watch" href="">Умные часы</a>
             </li>
             <li>
-              <a class="site-sub-navigation-quadcopters" href="">Квадрокоптеры</a>
+              <a class="site-sub-navigation-link site-sub-navigation-quadcopters" href="">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
         <li>
-          <a class="site-navigation-delivery" href="">Доставка</a>
+          <a class="site-navigation-link site-navigation-delivery" href="">Доставка</a>
         </li>
         <li>
-          <a class="site-navigation-warranty" href="">Гарантия</a>
+          <a class="site-navigation-link site-navigation-warranty" href="">Гарантия</a>
         </li>
         <li>
-          <a class="site-navigation-contacts" href="">Контакты</a>
+          <a class="site-navigation-link site-navigation-contacts" href="">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -94,13 +94,13 @@
 
       <ul class="sort-list">
         <li>
-          <a class="sort-list-ptice" href="">По цене</a>
+          <a class="sort-item sort-list-correct" href="">По цене</a>
         </li>
         <li>
-          <a class="sort-list-type" href="">По типу</a>
+          <a class="sort-item" href="">По типу</a>
         </li>
         <li>
-          <a class="sort-list-popularity" href="">По популярности</a>
+          <a class="sort-item" href="">По популярности</a>
         </li>
       </ul>
 
@@ -122,17 +122,17 @@
           <article>
             <p>
               <img src="https://via.placeholder.com/150x100" alt="">
-              <span>New</span>
+              <span class="mark-new">New</span>
             </p>
 
             <p>
-              <a href="">Любительская селфи-палка</a>
-              <span>500 руб</span>
+              <a class="catalog-item-title" href="">Любительская селфи-палка</a>
+              <span class="catalog-item-price">500 руб</span>
             </p>
 
             <p>
               <a class="button" href="">В корзину</a>
-              <a href="">Добавить к сравнению</a>
+              <a class="catalog-to-compare" href="">Добавить к сравнению</a>
             </p>
           </article>
         </li>
@@ -140,17 +140,17 @@
           <article>
             <p>
               <img src="https://via.placeholder.com/150x100" alt="">
-              <span>New</span>
+              <span class="mark-new">New</span>
             </p>
 
             <p>
-              <a href="">Профессиональная селфи-палка</a>
-              <span>1500 руб</span>
+              <a class="catalog-item-title" href="">Профессиональная селфи-палка</a>
+              <span class="catalog-item-price">1500 руб</span>
             </p>
 
             <p>
               <a class="button" href="">В корзину</a>
-              <a href="">Добавить к сравнению</a>
+              <a class="catalog-to-compare" href="">Добавить к сравнению</a>
             </p>
           </article>
         </li>
@@ -158,17 +158,17 @@
           <article>
             <p>
               <img src="https://via.placeholder.com/150x100" alt="">
-              <span>New</span>
+              <span class="mark-new">New</span>
             </p>
 
             <p>
-              <a href="">Непотопляемая селфи-палка</a>
-              <span>2500 руб</span>
+              <a class="catalog-item-title" href="">Непотопляемая селфи-палка</a>
+              <span class="catalog-item-price">2500 руб</span>
             </p>
 
             <p>
               <a class="button" href="">В корзину</a>
-              <a href="">Добавить к сравнению</a>
+              <a class="catalog-to-compare" href="">Добавить к сравнению</a>
             </p>
           </article>
         </li>
@@ -176,17 +176,17 @@
           <article>
             <p>
               <img src="https://via.placeholder.com/150x100" alt="">
-              <span>New</span>
+              <span class="mark-new">New</span>
             </p>
 
             <p>
-              <a href="">Селфи-палка «Следуй за мной»</a>
-              <span>4900 руб</span>
+              <a class="catalog-item-title" href="">Селфи-палка «Следуй за мной»</a>
+              <span class="catalog-item-price">4900 руб</span>
             </p>
 
             <p>
               <a class="button" href="">В корзину</a>
-              <a href="">Добавить к сравнению</a>
+              <a class="catalog-to-compare" href="">Добавить к сравнению</a>
             </p>
           </article>
         </li>
@@ -197,13 +197,13 @@
           <a class="pagination-back" href="">Назад</a>
         </li>
         <li>
-          <a class="pagination-page-1 pagination-page-active">1</a>
+          <a class="pagination-page pagination-page-active">1</a>
         </li>
         <li>
-          <a class="pagination-page-2" href="">2</a>
+          <a class="pagination-page" href="">2</a>
         </li>
         <li>
-          <a class="pagination-page-3" href="">3</a>
+          <a class="pagination-page" href="">3</a>
         </li>
         <li>
           <a class="pagination-next" href="">Вперед</a>
@@ -219,14 +219,14 @@
 
     <ul class="footer-user-list">
       <li>
-        <a class="footer-user-name" href="">Валентин Петухов</a>
-        <a class="footer-user-logout" href="">Выйти</a>
+        <a class="footer-user-link footer-user-name" href="">Валентин Петухов</a>
+        <a class="footer-user-link footer-user-logout" href="">Выйти</a>
       </li>
       <li>
-        <a class="footer-user-compare" href="">Сравнить</a>
+        <a class="footer-user-link footer-user-compare" href="">Сравнить</a>
       </li>
       <li>
-        <a class="footer-user-cart" href="">Корзина</a>
+        <a class="footer-user-link footer-user-cart" href="">Корзина</a>
       </li>
     </ul>
 
@@ -258,6 +258,8 @@
       </li>
     </ul>
 
-    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="https://via.placeholder.com/150x100" alt="">
+    </a>
   </footer>
 </body>
