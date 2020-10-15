@@ -69,6 +69,23 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .button {
   font-size: 18px;
   line-height: 22px;
@@ -88,6 +105,8 @@ img {
 }
 
 .main-navigation {
+  display: grid;
+
   background-color: var(--special-yellow);
 }
 
@@ -155,6 +174,8 @@ img {
 }
 
 .site-sub-navigation {
+  display: none;
+
   font-family: "Open Sans", Arial, sans-serif;
   text-transform: none;
   font-weight: 300;
@@ -178,6 +199,12 @@ img {
   padding: 0;
 
   list-style: none;
+}
+
+.promo-slider-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
 }
 
 .promo-slider-heading {
@@ -207,10 +234,17 @@ img {
 }
 
 .goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.goods-image-wrapper {
+  background-color: var(--special-yellow);
 }
 
 .goods-text {
@@ -223,6 +257,12 @@ img {
 
 .services {
   background-color: var(--basic-grey-light);
+}
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: 277px 1fr;
+  column-gap: 7px;
 }
 
 .services-slider-controls {
@@ -260,6 +300,13 @@ img {
 }
 
 .brands-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -273,6 +320,12 @@ img {
 .brands-image:active {
   filter: none;
   opacity: 1;
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
 }
 
 .about-us-heading {
@@ -318,6 +371,12 @@ img {
   background-color: var(--basic-dark);
 }
 
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 360px 1fr 360px;
+  grid-template-rows: 130px 1fr 130px;
+}
+
 .footer-logo:hover,
 .footer-logo:focus {
   opacity: 0.6;
@@ -328,6 +387,7 @@ img {
 }
 
 .footer-user-list {
+  grid-column: 3/-1;
   list-style: none;
 }
 
@@ -371,7 +431,12 @@ img {
   opacity: 0.3;
 }
 
+.footer-phone-number {
+  text-align: right;
+}
+
 .footer-social-list {
+  grid-column: 2/3;
   list-style: none;
 }
 
