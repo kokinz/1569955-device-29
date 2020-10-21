@@ -16,30 +16,34 @@
       </a>
 
       <ul class="user-navigation">
-        <li>
-          <a class="user-navigation-item user-navigation-search" href="">Поиск по сайту</a>
+        <li class="user-navigation-search">
+          <form class="user-navigation-item user-navigation-search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label for="user-search-label"></label>
+            <input id="user-search-input" type="search" placeholder="Поиск по сайту">
+            <button class="user-search-button" type="submit">Найти</button>
+          </form>
         </li>
-        <li>
+        <li class="user-navigation-login">
           <a class="user-navigation-item user-navigation-name" href="">Валентин Петухов</a>
           <a class="user-navigation-item user-navigation-logout" href="">Выйти</a>
         </li>
-        <li>
-          <a class="user-navigation-item user-navigation-compare" href="">Сравнить</a>
+        <li class="user-navigation-compare">
+          <a class="user-navigation-item user-navigation-compare-link" href="">Сравнить</a>
         </li>
-        <li>
-          <a class="user-navigation-item user-navigation-cart" href="">Корзина</a>
+        <li class="user-navigation-cart">
+          <a class="user-navigation-item user-navigation-cart-link" href="">Корзина</a>
         </li>
       </ul>
 
       <ul class="site-navigation">
-        <li>
-          <a class="site-navigation-link site-navigation-catalog" href="">Каталог товаров</a>
+        <li class="site-navigation-catalog">
+          <a class="site-navigation-link" href="">Каталог товаров</a>
           <ul class="site-sub-navigation">
             <li>
               <a class="site-sub-navigation-link site-sub-navigation-vr" href="">Виртуальная реальность</a>
             </li>
             <li>
-              <a class="site-sub-navigation-link site-sub-navigation-monopods">Моноподы для селфи</a>
+              <a class="site-sub-navigation-link site-sub-navigation-monopods" href="catalog.html">Моноподы для селфи</a>
             </li>
             <li>
               <a class="site-sub-navigation-link site-sub-navigation-action-cameras" href="">Экшн-камеры</a>
@@ -55,14 +59,14 @@
             </li>
           </ul>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-delivery" href="">Доставка</a>
+        <li class="site-navigation-delivery">
+          <a class="site-navigation-link" href="">Доставка</a>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-warranty" href="">Гарантия</a>
+        <li class="site-navigation-warranty">
+          <a class="site-navigation-link" href="">Гарантия</a>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-contacts" href="">Контакты</a>
+        <li class="site-navigation-contacts">
+          <a class="site-navigation-link" href="">Контакты</a>
         </li>
       </ul>
     </nav>

@@ -16,23 +16,27 @@
       </a>
 
       <ul class="user-navigation">
-        <li>
-          <a class="user-navigation-item user-navigation-search" href="">Поиск по сайту</a>
+        <li class="user-navigation-search">
+          <form class="user-navigation-item user-navigation-search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label for="user-search-label"></label>
+            <input id="user-search-input" type="search" placeholder="Поиск по сайту">
+            <button class="user-search-button" type="submit">Найти</button>
+          </form>
         </li>
-        <li>
-          <a class="user-navigation-item user-navigation-login" href="">Войти</a>
+        <li class="user-navigation-login">
+          <a class="user-navigation-item user-navigation-login-link" href="">Войти</a>
         </li>
-        <li>
-          <a class="user-navigation-item user-navigation-compare" href="">Сравнить</a>
+        <li class="user-navigation-compare">
+          <a class="user-navigation-item user-navigation-compare-link" href="">Сравнить</a>
         </li>
-        <li>
-          <a class="user-navigation-item user-navigation-cart" href="">Корзина</a>
+        <li class="user-navigation-cart">
+          <a class="user-navigation-item user-navigation-cart-link" href="">Корзина</a>
         </li>
       </ul>
 
       <ul class="site-navigation">
-        <li>
-          <a class="site-navigation-link site-navigation-catalog" href="">Каталог товаров</a>
+        <li class="site-navigation-catalog">
+          <a class="site-navigation-link" href="">Каталог товаров</a>
           <ul class="site-sub-navigation">
             <li>
               <a class="site-sub-navigation-link site-sub-navigation-vr" href="">Виртуальная реальность</a>
@@ -54,14 +58,14 @@
             </li>
           </ul>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-delivery" href="">Доставка</a>
+        <li class="site-navigation-delivery">
+          <a class="site-navigation-link" href="">Доставка</a>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-warranty" href="">Гарантия</a>
+        <li class="site-navigation-warranty">
+          <a class="site-navigation-link" href="">Гарантия</a>
         </li>
-        <li>
-          <a class="site-navigation-link site-navigation-contacts" href="">Контакты</a>
+        <li class="site-navigation-contacts">
+          <a class="site-navigation-link" href="">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -74,18 +78,18 @@
       <h2 class="visually-hidden">Промо</h2>
 
       <ul class="promo-slider-list">
-        <li class="promo-slider-item promo-slider-item-active">
-          <img src="./img/promo-slide1.png" alt="Самая длинная палка для селфи" width="384" height="486">
+        <li class="promo-slider-item promo-slider-item-1 promo-slider-item-active">
+          <img class="promo-slider-image" src="./img/promo-slide1.png" alt="Самая длинная палка для селфи" width="384" height="486">
 
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Делай селфи, как Бен Стиллер!</b>
             <p class="promo-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего
               5 килограмм.</p>
-            <a class="button" href="">Подробнее</a>
+            <a class="button promo-slider-details" href="">Подробнее</a>
 
             <table class="promo-slider-info">
               <tbody>
-                <tr>
+                <tr class="heading-row">
                   <th class="promo-slider-info-heading">8,5 м</th>
                   <th class="promo-slider-info-heading">5 кг</th>
                   <th class="promo-slider-info-heading">Карбон</th>
@@ -99,17 +103,17 @@
             </table>
           </div>
         </li>
-        <li class="promo-slider-item">
-          <img src="./img/promo-slide2.png" alt="Фитнес-браслет" width="345" height="485">
+        <li class="promo-slider-item  promo-slider-item-2">
+          <img class="promo-slider-image" src="./img/promo-slide2.png" alt="Фитнес-браслет" width="345" height="485">
 
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Худеем правильно!</b>
             <p class="promo-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a class="button" href="">Подробнее</a>
+            <a class="button promo-slider-details" href="">Подробнее</a>
 
             <table>
               <tbody>
-                <tr>
+                <tr class="heading-row">
                   <th class="promo-slider-info-heading">48 часов</th>
                 </tr>
                 <tr>
@@ -119,17 +123,17 @@
             </table>
           </div>
         </li>
-        <li class="promo-slider-item">
-          <img src="./img/promo-slide3.png" alt="Квадрокоптер с лазером" width="526" height="334">
+        <li class="promo-slider-item  promo-slider-item-3">
+          <img class="promo-slider-image" src="./img/promo-slide3.png" alt="Квадрокоптер с лазером" width="526" height="334">
 
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Порхает как бабочка, жалит как пчела!</b>
             <p class="promo-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a class="button" href="">Подробнее</a>
+            <a class="button promo-slider-details" href="">Подробнее</a>
 
             <table>
               <tbody>
-                <tr>
+                <tr class="heading-row">
                   <th class="promo-slider-info-heading">800 м</th>
                   <th class="promo-slider-info-heading">50 м</th>
                 </tr>
