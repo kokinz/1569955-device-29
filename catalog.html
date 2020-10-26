@@ -90,7 +90,71 @@
     <section class="filter">
       <h2>Фильтр:</h2>
 
-      <!-- Здесь будет форма фильтра -->
+      <form class="filter-form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-item filter-cost">
+          <legend class="filter-title">Стоимость</legend>
+          <div class="filter-range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="width: 67%; margin-left: 0%">
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="5000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="filter-item filter-color">
+          <legend class="filter-title">Цвет</legend>
+          <ul class="filter-color-list">
+            <li class="color-list-item">
+              <input class="visually-hidden color-check" type="checkbox" id="color-black" name="Чёрный" checked>
+              <label class="color-text" for="color-black">Чёрный</label>
+            </li>
+            <li class="color-list-item">
+              <input class="visually-hidden color-check" type="checkbox" id="color-white" name="Белый">
+              <label class="color-text" for="color-white">Белый</label>
+            </li>
+            <li class="color-list-item">
+              <input class="visually-hidden color-check" type="checkbox" id="color-blue" name="Синий" checked>
+              <label class="color-text" for="color-blue">Синий</label>
+            </li>
+            <li class="color-list-item">
+              <input class="visually-hidden color-check" type="checkbox" id="color-red" name="Красный" checked>
+              <label class="color-text" for="color-red">Красный</label>
+            </li>
+            <li class="color-list-item">
+              <input class="visually-hidden color-check" type="checkbox" id="color-pink" name="Розовый">
+              <label class="color-text" for="color-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filter-item filter-bluetooth">
+          <legend class="filter-title">Bluetooth</legend>
+          <ul class="filter-bluetooth-list">
+            <li class="bluetooth-list-item">
+              <input class="visually-hidden bluetooth-radio" id="bluetooth-yes" name="bluetooth" type="radio" value="yes" checked>
+              <label class="bluetooth-text" for="bluetooth-yes">Есть</label>
+            </li>
+            <li class="bluetooth-list-item">
+              <input class="visually-hidden bluetooth-radio" id="bluetooth-no" name="bluetooth" type="radio" value="no">
+              <label class="bluetooth-text" for="bluetooth-no">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+    </form>
     </section>
 
     <section class="sort">
@@ -196,15 +260,17 @@
         <li>
           <a class="pagination-back" href="">Назад</a>
         </li>
-        <li>
-          <a class="pagination-page pagination-page-active">1</a>
-        </li>
-        <li>
-          <a class="pagination-page" href="">2</a>
-        </li>
-        <li>
-          <a class="pagination-page" href="">3</a>
-        </li>
+        <ul class="pagination-page-list">
+          <li>
+            <a class="pagination-page pagination-page-active">1</a>
+          </li>
+          <li>
+            <a class="pagination-page" href="">2</a>
+          </li>
+          <li>
+            <a class="pagination-page" href="">3</a>
+          </li>
+        </ul>
         <li>
           <a class="pagination-next" href="">Вперед</a>
         </li>
