@@ -77,6 +77,18 @@
     <section class="promo-slider container">
       <h2 class="visually-hidden">Промо</h2>
 
+      <ul class="promo-slider-controls">
+        <li>
+          <button class="promo-slider-control-button promo-control-slide-1 promo-slider-control-button-active" type="button"></button>
+        </li>
+        <li>
+          <button class="promo-slider-control-button promo-control-slide-2" type="button"></button>
+        </li>
+        <li>
+          <button class="promo-slider-control-button promo-control-slide-3" type="button"></button>
+        </li>
+      </ul>
+
       <ul class="promo-slider-list">
         <li class="promo-slider-item promo-slider-item-1 promo-slider-item-active">
           <img class="promo-slider-image" src="./img/promo-slide1.png" alt="Самая длинная палка для селфи" width="384" height="486">
@@ -84,20 +96,8 @@
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Делай селфи, как Бен Стиллер!</b>
             <p class="promo-slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="promo-slider-controls-wrapper">
-              <a class="button promo-slider-details" href="">Подробнее</a>
-              <ul class="promo-slider-controls">
-                <li>
-                  <button class="promo-slider-control-button promo-slider-control-button-active" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-              </ul>
-            </div>
+            
+            <a class="button promo-slider-details" href="">Подробнее</a>
 
             <table class="promo-slider-info">
               <tbody>
@@ -121,21 +121,9 @@
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Худеем правильно!</b>
             <p class="promo-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <div class="promo-slider-controls-wrapper">
-              <a class="button promo-slider-details" href="">Подробнее</a>
-              <ul class="promo-slider-controls">
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button promo-slider-control-button-active" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-              </ul>
-            </div>
 
+            <a class="button promo-slider-details" href="">Подробнее</a>
+            
             <table class="promo-slider-info">
               <tbody>
                 <tr class="heading-row">
@@ -154,20 +142,8 @@
           <div class="promo-slider-wrapper">
             <b class="promo-slider-heading">Порхает как бабочка, жалит как пчела!</b>
             <p class="promo-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <div class="promo-slider-controls-wrapper">
-              <a class="button promo-slider-details" href="">Подробнее</a>
-              <ul class="promo-slider-controls">
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button" type="button"></button>
-                </li>
-                <li>
-                  <button class="promo-slider-control-button promo-slider-control-button-active" type="button"></button>
-                </li>
-              </ul>
-            </div>
+
+            <a class="button promo-slider-details" href="">Подробнее</a>
 
             <table class="promo-slider-info">
               <tbody>
@@ -395,6 +371,40 @@
       </a>
     </div>
   </footer>
+
+  <section class="modal modal-write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="write-us-items">
+        <div class="write-us-item">
+          <label for="full-name">Ваше имя:</label>
+          <input type="text" name="full-name" placeholder="Имя Фамилия" id="name">
+        </div>
+        <div class="write-us-item">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" placeholder="email@example.com" id="email">
+        </div>
+      </div>
+
+      <p class="write-us-item item-textarea">
+        <label for="text">Текст письма:</label>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <button class="button write-us-button" type="submit">Отправить</button>
+    </form>
+    
+    <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  </section>
+  
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7349.881474940834!2d37.52584762616235!3d55.686168660820705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1603738306732!5m2!1sru!2sru" width="960" height="559" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть окно"></button>
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
