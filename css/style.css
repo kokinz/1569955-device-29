@@ -818,7 +818,7 @@ input::placeholder {
 
   width: 1160px;
   margin-bottom: 84px;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .services-slider-controls {
