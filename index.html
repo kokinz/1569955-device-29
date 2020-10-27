@@ -376,21 +376,20 @@
     <h2 class="visually-hidden">Напишите нам</h2>
 
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="write-us-items">
-        <div class="write-us-item">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="full-name" placeholder="Имя Фамилия" id="name">
-        </div>
-        <div class="write-us-item">
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="email">
-        </div>
+      <div class="write-us-item">
+        <label for="name">Ваше имя:</label>
+        <input type="text" name="full-name" placeholder="Имя Фамилия" id="name">
+      </div>
+      
+      <div class="write-us-item">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" placeholder="email@example.com" id="email">
       </div>
 
-      <p class="write-us-item item-textarea">
+      <div class="write-us-item item-textarea">
         <label for="text">Текст письма:</label>
         <textarea name="text" id="text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
+      </div>
 
       <button class="button write-us-button" type="submit">Отправить</button>
     </form>

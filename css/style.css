@@ -2130,23 +2130,25 @@ input::placeholder {
   top: 120px;
   bottom: auto;
   width: 960px;
-  padding: 96px 100px 60px;
+  padding: 92px 100px 60px;
 }
 
-.write-us-items {
+.write-us-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 31px;
 }
 
 .write-us-item {
   display: flex;
   flex-direction: column;
   width: 360px;
+  margin-bottom: 31px;
 }
 
 .item-textarea {
   width: 760px;
+  margin-bottom: 0;
 }
 
 .write-us-item input,
@@ -2214,7 +2216,7 @@ input::placeholder {
 
 .write-us-button {
   width: 200px;
-  margin-top: 27px;
+  margin-top: 45px;
 
   background: linear-gradient(to bottom,transparent 16px,var(--special-yellow) 16px,var(--special-yellow) 24px,transparent 17px);
 }
