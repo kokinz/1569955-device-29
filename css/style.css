@@ -1672,9 +1672,18 @@ input::placeholder {
   opacity: 1;
 }
 
-
 .color-check:checked:active + .color-text::after {
   background: none;
+}
+
+.color-check:disabled + .color-text {
+  color: #A6A6A6;
+}
+
+.color-check:disabled + .color-text::before,
+.color-check:checked:disabled + .color-text::after,
+.color-check:disabled:active + .color-text::after {
+  opacity: 0.25;
 }
 
 .filter-bluetooth-list {
@@ -1747,6 +1756,17 @@ input::placeholder {
 .bluetooth-radio:checked + .bluetooth-text:hover::after,
 .bluetooth-radio:checked:focus + .bluetooth-text::after {
   opacity: 0.6;
+}
+
+.bluetooth-radio:disabled + .bluetooth-text {
+  color: #A6A6A6;
+}
+
+.bluetooth-radio:disabled + .bluetooth-text::before,
+.bluetooth-radio:checked:active + .bluetooth-text::before,
+.bluetooth-radio:checked:disabled + .bluetooth-text::after,
+.bluetooth-radio:disabled:active + .bluetooth-text::after {
+  opacity: 0.25;
 }
 
 .filter-button {
