@@ -37,13 +37,19 @@
   --basic-grey: #464646;
   --basic-half-grey: #7e7e7e;
   --basic-grey-light: #e5e5e5;
+  --basic-grey-dark: #dcdcdc;
 
   --special-yellow-dark: #f0c52e;
+  --special-yellow-light: #FFC600;
   --special-yellow: #f7e296;
   --special-green: #91c92f;
   --special-pink: #f6dada;
-
-  --special-yellow-light: #FFC600;
+  --special-gray: #c4c4c4;
+  --special-gray-light: #a6a6a6;
+  --special-gray-extra-light: #ebebeb;
+  --special-gray-dark: #d9d9d9;
+  --special-gray-extra-dark: #f2f2f2;
+  --special-half-gray: #eaeaea;
 }
 
 body {
@@ -1473,7 +1479,7 @@ input::placeholder {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  background: #DCDCDC;
+  background-color: var(--basic-grey-dark);
 }
 
 .filter-form {
@@ -1553,7 +1559,7 @@ input::placeholder {
   top: -9px;
   left: 0px;
 
-  background-color: #c4c4c4;
+  background-color: var(--special-gray);
 
   border: 8px solid var(--basic-white);
   border-radius: 50%;
@@ -1677,7 +1683,7 @@ input::placeholder {
 }
 
 .color-check:disabled + .color-text {
-  color: #A6A6A6;
+  color: var(--special-gray-light);
 }
 
 .color-check:disabled + .color-text::before,
@@ -2053,7 +2059,7 @@ input::placeholder {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
-  background: #EBEBEB;
+  background-color: var(--special-gray-extra-light);
 }
 
 .pagination-back {
@@ -2067,13 +2073,13 @@ input::placeholder {
 
 .pagination-back:hover,
 .pagination-back:focus {
-  background: #D9D9D9;
+  background-color: var(--special-gray-dark);
 }
 
 .pagination-back:active {
   color: rgba(0, 0, 0, 0.3);
 
-  background: #D9D9D9;
+  background-color: var(--special-gray-dark);
 }
 
 .pagination-next {
@@ -2087,13 +2093,13 @@ input::placeholder {
 
 .pagination-next:hover,
 .pagination-next:focus {
-  background: #D9D9D9;
+  background-color: var(--special-gray-dark);
 }
 
 .pagination-next:active {
   color: rgba(0, 0, 0, 0.3);
 
-  background: #D9D9D9;
+  background-color: var(--special-gray-dark);
 }
 
 .pagination-page-list {
@@ -2196,7 +2202,7 @@ input::placeholder {
 
   color: var(--basic-black);
   border: none;
-  background-color: #f2f2f2;
+  background-color: var(--special-gray-extra-dark);
 }
 
 .write-us-item input::placeholder {
@@ -2204,7 +2210,7 @@ input::placeholder {
 }
 
 .write-us-item input:hover {
-  background-color: #EAEAEA;
+  background-color: var(--special-half-gray);
 }
 
 .write-us-item input:focus,
@@ -2217,7 +2223,7 @@ input::placeholder {
 
 .write-us-item input:invalid,
 .write-us-item input:invalid:hover {
-  background-color: #F6DADA;
+  background-color: var(--special-pink);
 }
 
 .write-us-item textarea {
@@ -2232,7 +2238,7 @@ input::placeholder {
 }
 
 .write-us-item textarea:hover {
-  background-color: #EAEAEA;
+  background-color: var(--special-half-gray);
 }
 
 .write-us-item textarea:focus,
